@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.MainActivity">
+
+    <TextView
+        android:id="@+id/tvw_infoUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="30dp"
+        android:text="User Info: "
+        android:textStyle="bold"></TextView>
+
+    <TextView
+        android:id="@+id/tvw_infoUserAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvw_infoUsername"
+        android:textSize="30dp"
+        android:text="User Info: "
+        android:textStyle="bold"></TextView>
+
+    <EditText
+        android:id="@+id/userNameEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tvw_infoUserAge"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:hint="Enter Name"
+        android:textStyle="bold"
+        android:textSize="20dp"></EditText>
+
+    <EditText
+        android:id="@+id/userAgeEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/userNameEditText"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:hint="Enter Age"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:inputType="number"
+        app:layout_constraintRight_toRightOf="parent"></EditText>
+
+    <Button
+        android:id="@+id/btn_onClick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/userAgeEditText"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:text="Click Here"
+        android:fontFamily="serif"></Button>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
